@@ -1,0 +1,60 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+$presentation-heading-color: #75AADB;
+$presentation-title-slide-text-align: "left";
+
+/*-- scss:rules --*/
+
+details>summary {
+  font-size: 0.75em;
+}
+
+.reveal .julie h2 {
+  color: #FF744E;
+}
+
+.quote { /*-- julie note: not final! I am not good with css/color but wanted to have something --*/
+  color: #FF744E;
+  background-color: #FAE3E3;
+  font-style: italic;
+  text-align: center;
+}
+
+.todo {
+  color: red;
+  background-color: yellow;
+  font-style: italic;
+}
+
+.question {
+  background-color: #FF744E;
+  font-style: italic;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.reveal .slide .demo {
+  border: 3px solid #c7cfcf;
+  color: white;
+  font-size: 0.75em;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #607576;
+}
+
+.reveal .slide .illustration {
+  border: 3px solid #FF744E;
+  color: black;
+  font-size: 0.75em;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #FAE3E3;
+}

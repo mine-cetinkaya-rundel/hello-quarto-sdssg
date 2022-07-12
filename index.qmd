@@ -1,6 +1,10 @@
 ---
 title: "Hello, Quarto!"
-format: revealjs
+format: 
+  revealjs: 
+    theme: style.scss
+    multiplex: true
+    transition: fade
 editor: visual
 ---
 
@@ -13,29 +17,150 @@ publishing system.
 
 ## A bit of magic ✨
 
+<br><br><br>
+
+::: {style="text-align: center; font-size: 2em;"}
+[bit.ly/hello-quarto](https://bit.ly/hello-quarto)
+:::
+
 ## Quarto vs. R Markdown
 
--   **Quarto unifies & extends the R Markdown ecosystem**
+**Quarto unifies & extends the R Markdown ecosystem:**
+
 -   **Unifies** for people who love R Markdown
 -   **Extends** for people who do not yet know R Markdown
 
 ## Let's dive in!
 
-Quarto enables you to weave together content and executable code into a finished presentation.
-To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+![](images/diver-penguin.gif){fig-alt="Penguin with diving mask and air bubbles that look like the Quarto logo" fig-align="center"}
 
-## Bullets
+## Back on land!
 
-When you click the **Render** button a document will be generated that includes:
+![](images/baller-penguin.gif){fig-alt="Penguin with a bouncing ball, the ball is the Quarto logo." fig-align="center" width="700"}
 
--   Content authored with markdown
--   Output from executable code
+## Running code
 
-## Code
+Two engines supported for running computations:
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code.
-You can embed code like this:
+-   [Jupyter](https://jupyter.org/) for running code from Python and many other languages
 
-```{r}
-1 + 1
+-   [Knitr](https://yihui.org/knitr/) for running code from R
+
+![](images/how-it-works.png){fig-align="center"}
+
+## Editing documents
+
+You're not limited to RStudio for editing Quarto documents...
+
+-   [JupyterLab](https://quarto.org/docs/tools/jupyter-lab.html)
+
+-   [VS Code](https://quarto.org/docs/tools/vscode.html)
+
+-   Other [text editors](https://quarto.org/docs/tools/text-editors.html)
+
+## Quarto projects {.smaller}
+
+Organize a collection of Quarto files in a folder as projects
+
+::: columns
+::: {.column width="50%"}
+-   render all or some of the files with a single command
+-   share YAML configuration across multiple documents
+-   redirect output artifacts to another directory
+-   freeze rendered output (i.e. don't re-execute documents unless they have changed)
+:::
+
+::: {.column width="50%"}
+![](images/new-project.png){fig-alt="New project menu in the RStudio IDE. Four types of new projects are highlighted: Quarto Project, Quarto Website, Quarto Blog, Quarto Book."}
+:::
+:::
+
+## Quarto websites
+
+::: columns
+::: {.column width="50%"}
+![](images/website-bea-milz.png){fig-alt="Bea Milz's homepage at https://beamilz.com/." fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](images/website-210.png){fig-alt="Course website for STA 210 at Duke at https://sta210-s22.github.io/website/." fig-align="center"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+![](images/website-quarto.png){fig-alt="Quarto homepage at https://quarto.org/." fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](images/website-julia-workshop.png){fig-alt="Julia workshop at https://crsl4.github.io/julia-workshop/." fig-align="center"}
+:::
+:::
+
+## Quarto blogs
+
+::: columns
+::: {.column width="50%"}
+![](images/blog-quarto.png){fig-alt="Screenshot of Quarto Blog page at https://quarto.org/docs/blog/." fig-align="center" width="901"}
+:::
+
+::: {.column width="50%"}
+![](images/blog-quarto-tip-a-day.png){fig-alt="Quarto Tip a Day blog at https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/." fig-align="center"}
+:::
+:::
+
+
+## Quarto books
+
+::: columns
+::: {.column width="50%"}
+![](images/book-r4ds.png){fig-alt="Book: R for Data Science at https://r4ds.hadley.nz/." fig-align="center" width="901"}
+:::
+
+::: {.column width="50%"}
+![](images/book-rflow.png){fig-alt="Book: R Workflow at https://www.fharrell.com/post/rflow." fig-align="center"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+![](images/book-resampling-stats-python.png){fig-alt="Book: Resampling Statistics - Python Edition at https://resampling-stats.github.io/resampling-with/python-book/index.html." fig-align="center"}
+:::
+::: {.column width="50%"}
+![](images/book-resampling-stats-r.png){fig-alt="Book: Resampling Statistics - R Edition at https://resampling-stats.github.io/resampling-with/r-book/index.html." fig-align="center"}
+:::
+:::
+
+## Get started!
+
+::: {style="text-align: center;"}
+[quarto.org/docs/get-started](https://quarto.org/docs/get-started/)
+:::
+
+```{=html}
+<iframe src="https://quarto.org/docs/get-started/" title="Quarto Get Started Tutorials" width="100%" height="70%" style="border:1px solid gray;"></iframe>
 ```
+## Acknowledgements
+
+-   Icons by flatart_icons - Flaticon: [rewind](https://www.flaticon.com/free-icons/rewind), [hello](https://www.flaticon.com/free-icons/hello), [diver](https://www.flaticon.com/free-icons/diver), [penguin](https://www.flaticon.com/free-icons/penguin)
+-   [Quarto documentation](https://quarto.org/)
+
+## 
+
+::: columns
+::: {.column width="50%"}
+### 🔗 Slides
+
+[bit.ly/hello-quarto](https://bit.ly/hello-quarto)
+
+<br><br>
+
+### `<>` Code
+
+[github.com/mine-cetinkaya-rundel/hello-quarto-sdssg](https://github.com/mine-cetinkaya-rundel/hello-quarto-sdssg)
+:::
+
+::: {.column width="50%"}
+![](images/thank-you-quarto.png){fig-alt="Quarto logo with a speech bubble that says \"Thank you\". The logo is a blue circle with a white cross in the middle, dividing the circle into four equal quadrants. The speech bubble has a flower on the corner." fig-align="center" width="600"}
+:::
+:::
