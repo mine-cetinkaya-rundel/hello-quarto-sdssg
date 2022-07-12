@@ -1,10 +1,25 @@
 ---
-title: "hello"
+title: "Hello, Quarto!"
 format: revealjs
 editor: visual
 ---
 
-## Quarto
+## What is Quarto?
+
+Quarto is a new open-source scientific & technical\
+publishing system.
+
+**Goal:** Make the process of creating and collaborating on scientific and technical documents dramatically better.
+
+## A bit of magic ✨
+
+## Quarto vs. R Markdown
+
+-   **Quarto unifies & extends the R Markdown ecosystem**
+-   **Unifies** for people who love R Markdown
+-   **Extends** for people who do not yet know R Markdown
+
+## Let's dive in!
 
 Quarto enables you to weave together content and executable code into a finished presentation.
 To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
